@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueRidgeRelief.Data", "BlueRidgeRelief.Data\BlueRidgeRelief.Data.csproj", "{01C1946F-EEC0-4EB2-8B39-017FBAB26CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueRidgeRelief.Core", "BlueRidgeRelief.Core\BlueRidgeRelief.Core.csproj", "{57608A11-6D38-4417-907A-1A6667B26823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueRidgeRelief.Services", "BlueRidgeRelief.Services\BlueRidgeRelief.Services.csproj", "{B4BC2251-C8D3-4300-A3CE-9CDB7F0BD1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueRidgeRelief.DTOs", "BlueRidgeRelief.DTOs\BlueRidgeRelief.DTOs.csproj", "{BFC9B4AC-9AF7-4F85-937D-ED25A56CFB5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueRidgeRelief.Mapping", "BlueRidgeRelief.Mapping\BlueRidgeRelief.Mapping.csproj", "{4886AAE1-8133-4CC2-8649-476DA24A14C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueRidgeRelief.Web", "BlueRidgeRelief.Web\BlueRidgeRelief.Web.csproj", "{74BF9A93-77DD-49BD-AE61-BEBFCACF60EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01C1946F-EEC0-4EB2-8B39-017FBAB26CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C1946F-EEC0-4EB2-8B39-017FBAB26CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C1946F-EEC0-4EB2-8B39-017FBAB26CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C1946F-EEC0-4EB2-8B39-017FBAB26CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57608A11-6D38-4417-907A-1A6667B26823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57608A11-6D38-4417-907A-1A6667B26823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57608A11-6D38-4417-907A-1A6667B26823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57608A11-6D38-4417-907A-1A6667B26823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BC2251-C8D3-4300-A3CE-9CDB7F0BD1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BC2251-C8D3-4300-A3CE-9CDB7F0BD1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BC2251-C8D3-4300-A3CE-9CDB7F0BD1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BC2251-C8D3-4300-A3CE-9CDB7F0BD1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFC9B4AC-9AF7-4F85-937D-ED25A56CFB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFC9B4AC-9AF7-4F85-937D-ED25A56CFB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFC9B4AC-9AF7-4F85-937D-ED25A56CFB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFC9B4AC-9AF7-4F85-937D-ED25A56CFB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4886AAE1-8133-4CC2-8649-476DA24A14C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4886AAE1-8133-4CC2-8649-476DA24A14C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4886AAE1-8133-4CC2-8649-476DA24A14C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4886AAE1-8133-4CC2-8649-476DA24A14C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BF9A93-77DD-49BD-AE61-BEBFCACF60EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BF9A93-77DD-49BD-AE61-BEBFCACF60EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BF9A93-77DD-49BD-AE61-BEBFCACF60EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BF9A93-77DD-49BD-AE61-BEBFCACF60EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AEB7FDD-0AB7-4A0C-B276-C373B42D8253}
+	EndGlobalSection
+EndGlobal
