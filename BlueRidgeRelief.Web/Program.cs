@@ -1,4 +1,6 @@
+using BlueRidgeRelief.Core.Interfaces;
 using BlueRidgeRelief.Data;
+using BlueRidgeRelief.Data.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,6 +21,9 @@ namespace BlueRidgeRelief.Web
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+            
+            // Add Application Services
+            builder.Services.AddScoped<INeedsRepository, NeedsRepository>();
 
             var app = builder.Build();
 
