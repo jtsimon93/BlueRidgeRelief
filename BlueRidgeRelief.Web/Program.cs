@@ -24,6 +24,7 @@ namespace BlueRidgeRelief.Web
             
             // Add Application Services
             builder.Services.AddScoped<INeedsRepository, NeedsRepository>();
+            builder.Services.AddScoped<ICustomUserDetailsRepository, CustomUserDetailsRepository>();
 
             var app = builder.Build();
 
