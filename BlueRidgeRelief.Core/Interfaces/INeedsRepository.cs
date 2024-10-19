@@ -13,6 +13,5 @@ public interface INeedsRepository
     Task<IEnumerable<Need>> GetNeedsByUrgencyLevelAsync(string urgencyLevel);
     Task<IEnumerable<Need>> GetNeedsByStatusAsync(string status);
     Task<IEnumerable<Need>> GetNeedsByLocationAsync(string location);
-    
     Task<IEnumerable<Need>> GetNeedsByLocationAsync(double latitude, double longitude, double radius);
 }
