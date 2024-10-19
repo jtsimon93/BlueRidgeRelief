@@ -1,4 +1,4 @@
-using BlueRidgeRelief.Web.Data;
+using BlueRidgeRelief.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
