@@ -62,4 +62,22 @@ public class NeedsService : INeedsService
         return _needsRepository.GetNeedsByLocationAsync(latitude, longitude, radius);
     }
     
+    public async Task<bool> DeleteNeedAsync(int id)
+    {
+        // Find the need by ID
+        var need = await _needsRepository.GetNeedByIdAsync(id);
+
+        if (need == null)
+        {
+            return false;
+        }
+
+        need.IsDeleted = true;
+        need.DeletedAt = DateTime.UtcNow;
+        
+        await _needsRepository.UpdateNeedAsync(need);
+        
+        return true;
+    }
+    
 }
