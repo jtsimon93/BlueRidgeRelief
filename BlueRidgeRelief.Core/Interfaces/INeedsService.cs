@@ -2,7 +2,7 @@
 
 namespace BlueRidgeRelief.Core.Interfaces;
 
-public interface INeedsRepository
+public interface INeedsService
 {
     Task<IEnumerable<Need>> GetNeedsAsync();
     Task<Need?> GetNeedByIdAsync(int id);
@@ -13,5 +13,5 @@ public interface INeedsRepository
     Task<IEnumerable<Need>> GetNeedsByUrgencyLevelAsync(string urgencyLevel);
     Task<IEnumerable<Need>> GetNeedsByStatusAsync(string status);
     Task<IEnumerable<Need>> GetNeedsByLocationAsync(string location);
-    Task<IEnumerable<Need>> GetNeedsByLocationAsync(double latitude, double longitude, double radius);
+    Task<IEnumerable<Need>> GetNeedsByLocationAsync(double latitude, double longitude, double radius); 
 }
