@@ -12,54 +12,54 @@ public class NeedsService : INeedsService
         _needsRepository = needsRepository;
     }
     
-    public Task<IEnumerable<Need>> GetNeedsAsync()
+    public async Task<IEnumerable<Need>> GetNeedsAsync()
     {
-        return _needsRepository.GetNeedsAsync();
+        return await _needsRepository.GetNeedsAsync();
     }
     
-    public Task<Need?> GetNeedByIdAsync(int id)
+    public async Task<Need?> GetNeedByIdAsync(int id)
     {
-        return _needsRepository.GetNeedByIdAsync(id);
+        return await _needsRepository.GetNeedByIdAsync(id);
     }
     
-    public Task<Need> CreateNeedAsync(Need need)
+    public async Task<Need> CreateNeedAsync(Need need)
     {
-        return _needsRepository.CreateNeedAsync(need);
+        return await _needsRepository.CreateNeedAsync(need);
     }
     
-    public Task<Need> UpdateNeedAsync(Need need)
+    public async Task<Need> UpdateNeedAsync(Need need)
     {
-        return _needsRepository.UpdateNeedAsync(need);
+        return await _needsRepository.UpdateNeedAsync(need);
     }
     
-    public Task<IEnumerable<Need>> GetNeedsByUserIdAsync(string userId)
+    public async Task<IEnumerable<Need>> GetNeedsByUserIdAsync(string userId)
     {
-        return _needsRepository.GetNeedsByUserIdAsync(userId);
+        return await _needsRepository.GetNeedsByUserIdAsync(userId);
     }
     
-    public Task<IEnumerable<Need>> GetNeedsByCategoryAsync(string category)
+    public async Task<IEnumerable<Need>> GetNeedsByCategoryAsync(string category)
     {
-        return _needsRepository.GetNeedsByCategoryAsync(category);
+        return await _needsRepository.GetNeedsByCategoryAsync(category);
     }
     
-    public Task<IEnumerable<Need>> GetNeedsByUrgencyLevelAsync(string urgencyLevel)
+    public async Task<IEnumerable<Need>> GetNeedsByUrgencyLevelAsync(string urgencyLevel)
     {
-        return _needsRepository.GetNeedsByUrgencyLevelAsync(urgencyLevel);
+        return await _needsRepository.GetNeedsByUrgencyLevelAsync(urgencyLevel);
     }
     
-    public Task<IEnumerable<Need>> GetNeedsByStatusAsync(string status)
+    public async Task<IEnumerable<Need>> GetNeedsByStatusAsync(string status)
     {
-        return _needsRepository.GetNeedsByStatusAsync(status);
+        return await _needsRepository.GetNeedsByStatusAsync(status);
     }
     
-    public Task<IEnumerable<Need>> GetNeedsByLocationAsync(string location)
+    public async Task<IEnumerable<Need>> GetNeedsByLocationAsync(string location)
     {
-        return _needsRepository.GetNeedsByLocationAsync(location);
+        return await _needsRepository.GetNeedsByLocationAsync(location);
     }
     
-    public Task<IEnumerable<Need>> GetNeedsByLocationAsync(double latitude, double longitude, double radius)
+    public async Task<IEnumerable<Need>> GetNeedsByLocationAsync(double latitude, double longitude, double radius)
     {
-        return _needsRepository.GetNeedsByLocationAsync(latitude, longitude, radius);
+        return await _needsRepository.GetNeedsByLocationAsync(latitude, longitude, radius);
     }
     
     public async Task<bool> DeleteNeedAsync(int id)

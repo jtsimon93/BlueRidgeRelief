@@ -12,19 +12,19 @@ public class CustomUserDetailsService : ICustomUserDetailsService
        _customUserDetailsRepository = customUserDetailsRepository;
    }
    
-   public Task<CustomUserDetails?> GetCustomUserDetailsByUserIdAsync(string userId)
+   public async Task<CustomUserDetails?> GetCustomUserDetailsByUserIdAsync(string userId)
    {
-       return _customUserDetailsRepository.GetCustomUserDetailsByUserIdAsync(userId);
+       return await _customUserDetailsRepository.GetCustomUserDetailsByUserIdAsync(userId);
    }
    
-   public Task<CustomUserDetails> CreateCustomUserDetailsAsync(CustomUserDetails customUserDetails)
+   public async Task<CustomUserDetails> CreateCustomUserDetailsAsync(CustomUserDetails customUserDetails)
    {
-       return _customUserDetailsRepository.CreateCustomUserDetailsAsync(customUserDetails);
+       return await _customUserDetailsRepository.CreateCustomUserDetailsAsync(customUserDetails);
    }
    
-   public Task<CustomUserDetails> UpdateCustomUserDetailsAsync(CustomUserDetails customUserDetails)
+   public async Task<CustomUserDetails> UpdateCustomUserDetailsAsync(CustomUserDetails customUserDetails)
    {
-       return _customUserDetailsRepository.UpdateCustomUserDetailsAsync(customUserDetails);
+       return await _customUserDetailsRepository.UpdateCustomUserDetailsAsync(customUserDetails);
    }
    
 }
