@@ -1,6 +1,7 @@
 using BlueRidgeRelief.Core.Interfaces;
 using BlueRidgeRelief.Data;
 using BlueRidgeRelief.Data.Repositories;
+using BlueRidgeRelief.Mapping;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,6 +24,7 @@ namespace BlueRidgeRelief.Web
             builder.Services.AddControllersWithViews();
             
             // Add Application Services
+            builder.Services.AddAutoMapper(typeof(MappingProfile));
             builder.Services.AddScoped<INeedsRepository, NeedsRepository>();
             builder.Services.AddScoped<ICustomUserDetailsRepository, CustomUserDetailsRepository>();
 
