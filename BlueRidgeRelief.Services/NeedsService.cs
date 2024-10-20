@@ -17,6 +17,11 @@ public class NeedsService : INeedsService
         return await _needsRepository.GetNeedsAsync();
     }
     
+    public async Task<IEnumerable<Need>> GetSortedNeedsAsync()
+    {
+        return await _needsRepository.GetSortedNeedsAsync();
+    }
+    
     public async Task<Need?> GetNeedByIdAsync(int id)
     {
         return await _needsRepository.GetNeedByIdAsync(id);
