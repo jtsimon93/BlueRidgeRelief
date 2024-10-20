@@ -1,21 +1,30 @@
 using BlueRidgeRelief.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using AutoMapper;
+using BlueRidgeRelief.Core.Interfaces;
+using BlueRidgeRelief.DTOs;
 
 namespace BlueRidgeRelief.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly INeedsService _needsService;
+        private readonly IMapper _mapper;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, INeedsService needsService, IMapper mapper)
         {
             _logger = logger;
+            _needsService = needsService;
+            _mapper = mapper;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var needs = await _needsService.GetSortedNeedsAsync();
+            var needsDto = _mapper.Map<IEnumerable<NeedDto>>(needs);
+            return View(needsDto);
         }
 
         public IActionResult Privacy()
