@@ -5,6 +5,7 @@ namespace BlueRidgeRelief.Core.Interfaces;
 public interface INeedsService
 {
     Task<IEnumerable<Need>> GetNeedsAsync();
+    Task<IEnumerable<Need>> GetSortedNeedsAsync();
     Task<Need?> GetNeedByIdAsync(int id);
     Task<Need> CreateNeedAsync(Need need);
     Task<Need> UpdateNeedAsync(Need need);

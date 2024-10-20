@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BlueRidgeRelief.Data\BlueRidgeRelief.Data.csproj" />
     <ProjectReference Include="..\BlueRidgeRelief.Mapping\BlueRidgeRelief.Mapping.csproj" />
+    <ProjectReference Include="..\BlueRidgeRelief.Services\BlueRidgeRelief.Services.csproj" />
   </ItemGroup>
 
 </Project>

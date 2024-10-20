@@ -17,6 +17,13 @@ public class NeedsRepository : INeedsRepository
     {
         return await _context.Needs.AsNoTracking().ToListAsync();
     }
+
+    public async Task<IEnumerable<Need>> GetSortedNeedsAsync()
+    {
+        return await _context.Needs.AsNoTracking().OrderBy(n => n.CreatedAt).ThenBy(n => n.UrgencyLevel).ThenBy(
+            n => n.Status
+        ).ToListAsync();
+    }
     
     public async Task<Need?> GetNeedByIdAsync(int id)
     {
